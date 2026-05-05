@@ -1,5 +1,4 @@
-const punycode = require('punycode')
-const path = require('path')
+const punycode = require('punycode/')
 
 const searchEngine = require('util/searchEngine.js')
 const hosts = require('./hosts.js')

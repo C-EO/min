@@ -1,5 +1,5 @@
 /* downloads public list of suffixes maintained by Mozilla and community */
-const punycode = require('punycode')
+const punycode = require('punycode/')
 const https = require('https')
 const fs = require('fs')
 const path = require('path')
