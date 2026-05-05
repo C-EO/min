@@ -24,7 +24,7 @@ async function showSearchbarPlaceResults (text, input, inputFlags, pluginName = 
   }
 
   // only autocomplete an item if the delete key wasn't pressed
-  var canAutocomplete = !inputFlags.isDeletion
+  var canAutocomplete = pluginName === 'places' && !inputFlags.isDeletion
 
   let results = await searchFn(text)
 
